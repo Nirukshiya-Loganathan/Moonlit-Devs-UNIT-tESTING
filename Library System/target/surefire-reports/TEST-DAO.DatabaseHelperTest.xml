@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="DAO.DatabaseHelperTest" time="0.04" tests="2" errors="0" skipped="0" failures="0">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="DAO.DatabaseHelperTest" time="0.053" tests="2" errors="0" skipped="0" failures="0">
   <properties>
     <property name="java.specification.version" value="22"/>
     <property name="sun.cpu.isalist" value="amd64"/>
@@ -15,7 +15,7 @@
     <property name="sun.java.launcher" value="SUN_STANDARD"/>
     <property name="user.country" value="GB"/>
     <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk-22\bin"/>
-    <property name="sun.java.command" value="C:\Users\lniru\AppData\Local\Temp\surefire8108040926438837990\surefirebooter-20250825154249249_3.jar C:\Users\lniru\AppData\Local\Temp\surefire8108040926438837990 2025-08-25T15-42-49_111-jvmRun1 surefire-20250825154249249_1tmp surefire_0-20250825154249249_2tmp"/>
+    <property name="sun.java.command" value="C:\Users\lniru\AppData\Local\Temp\surefire7568539258954441218\surefirebooter-20250825165356562_3.jar C:\Users\lniru\AppData\Local\Temp\surefire7568539258954441218 2025-08-25T16-53-56_390-jvmRun1 surefire-20250825165356562_1tmp surefire_0-20250825165356562_2tmp"/>
     <property name="jdk.debug" value="release"/>
     <property name="surefire.test.class.path" value="D:\Moonlit Devs\Library System\target\test-classes;D:\Moonlit Devs\Library System\target\classes;C:\Users\lniru\.m2\repository\org\junit\jupiter\junit-jupiter\5.10.2\junit-jupiter-5.10.2.jar;C:\Users\lniru\.m2\repository\org\junit\jupiter\junit-jupiter-api\5.10.2\junit-jupiter-api-5.10.2.jar;C:\Users\lniru\.m2\repository\org\opentest4j\opentest4j\1.3.0\opentest4j-1.3.0.jar;C:\Users\lniru\.m2\repository\org\junit\platform\junit-platform-commons\1.10.2\junit-platform-commons-1.10.2.jar;C:\Users\lniru\.m2\repository\org\apiguardian\apiguardian-api\1.1.2\apiguardian-api-1.1.2.jar;C:\Users\lniru\.m2\repository\org\junit\jupiter\junit-jupiter-params\5.10.2\junit-jupiter-params-5.10.2.jar;C:\Users\lniru\.m2\repository\org\junit\jupiter\junit-jupiter-engine\5.10.2\junit-jupiter-engine-5.10.2.jar;C:\Users\lniru\.m2\repository\org\junit\platform\junit-platform-engine\1.10.2\junit-platform-engine-1.10.2.jar;C:\Users\lniru\.m2\repository\org\mockito\mockito-core\5.12.0\mockito-core-5.12.0.jar;C:\Users\lniru\.m2\repository\net\bytebuddy\byte-buddy\1.14.15\byte-buddy-1.14.15.jar;C:\Users\lniru\.m2\repository\net\bytebuddy\byte-buddy-agent\1.14.15\byte-buddy-agent-1.14.15.jar;C:\Users\lniru\.m2\repository\org\objenesis\objenesis\3.3\objenesis-3.3.jar;C:\Users\lniru\.m2\repository\com\mysql\mysql-connector-j\8.0.33\mysql-connector-j-8.0.33.jar;C:\Users\lniru\.m2\repository\com\google\protobuf\protobuf-java\3.21.9\protobuf-java-3.21.9.jar;"/>
     <property name="sun.cpu.endian" value="little"/>
@@ -30,7 +30,7 @@
     <property name="line.separator" value="&#10;"/>
     <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
     <property name="java.specification.name" value="Java Platform API Specification"/>
-    <property name="surefire.real.class.path" value="C:\Users\lniru\AppData\Local\Temp\surefire8108040926438837990\surefirebooter-20250825154249249_3.jar"/>
+    <property name="surefire.real.class.path" value="C:\Users\lniru\AppData\Local\Temp\surefire7568539258954441218\surefirebooter-20250825165356562_3.jar"/>
     <property name="user.script" value=""/>
     <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
     <property name="java.runtime.version" value="22.0.1+8-16"/>
@@ -58,9 +58,9 @@
     <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
     <property name="java.class.version" value="66.0"/>
   </properties>
-  <testcase name="getConnection_failureReturnsNull" classname="DAO.DatabaseHelperTest" time="0.035">
+  <testcase name="getConnection_failureReturnsNull" classname="DAO.DatabaseHelperTest" time="0.048">
     <system-err><![CDATA[java.sql.SQLException
-	at DAO.DatabaseHelper.getConnection(DatabaseHelper.java:16)
+	at DAO.DatabaseHelper.getConnection(DatabaseHelper.java:18)
 	at DAO.DatabaseHelperTest.getConnection_failureReturnsNull(DatabaseHelperTest.java:36)
 	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
@@ -133,5 +133,5 @@
 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
 ]]></system-err>
   </testcase>
-  <testcase name="getConnection_successfulConnection" classname="DAO.DatabaseHelperTest" time="0.002"/>
+  <testcase name="getConnection_successfulConnection" classname="DAO.DatabaseHelperTest" time="0.003"/>
 </testsuite>

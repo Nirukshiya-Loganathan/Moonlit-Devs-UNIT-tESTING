@@ -1,4 +1,4 @@
-# Created at 2025-08-25T15:42:49.292
+# Created at 2025-08-25T16:53:56.613
 Boot Manifest-JAR contains absolute paths in classpath 'D:\Moonlit Devs\Library System\target\test-classes'
 Hint: <argLine>-Djdk.net.URLClassPath.disableClassPathURLCheck=true</argLine>
 'other' has different root

@@ -1,38 +1,39 @@
 package DAO;
 
-import static org.mockito.Mockito.*;
-import static org.junit.jupiter.api.Assertions.*;
-
+import org.junit.jupiter.api.*;
 import java.sql.Connection;
 import java.sql.SQLException;
 
-import org.junit.jupiter.api.Test;
+import static org.junit.jupiter.api.Assertions.*;
+import static org.mockito.Mockito.*;
 
 class DatabaseHelperTest {
 
-    @Test
-    void getConnection_successfulConnection() throws SQLException {
-        // Mock the ConnectionProvider
-        ConnectionProvider mockProvider = mock(ConnectionProvider.class);
-        Connection mockConnection = mock(Connection.class);
+    private ConnectionProvider mockProvider;
+    private DatabaseHelper helper;
 
-        when(mockProvider.getConnection()).thenReturn(mockConnection);
-
-        DatabaseHelper helper = new DatabaseHelper(mockProvider);
-
-        // Test that a connection is returned successfully
-        assertNotNull(helper.getConnection());
+    @BeforeEach
+    void setup() {
+        mockProvider = mock(ConnectionProvider.class);
+        helper = new DatabaseHelper(mockProvider);
     }
 
     @Test
+    @DisplayName("Successful connection returns non-null")
+    void getConnection_successfulConnection() throws SQLException {
+        Connection mockConnection = mock(Connection.class);
+        when(mockProvider.getConnection()).thenReturn(mockConnection);
+
+        Connection conn = helper.getConnection();
+        assertNotNull(conn, "Connection should not be null");
+    }
+
+    @Test
+    @DisplayName("Failed connection returns null")
     void getConnection_failureReturnsNull() throws SQLException {
-        // Mock the ConnectionProvider to throw SQLException
-        ConnectionProvider mockProvider = mock(ConnectionProvider.class);
         when(mockProvider.getConnection()).thenThrow(new SQLException());
 
-        DatabaseHelper helper = new DatabaseHelper(mockProvider);
-
-        // Test that null is returned on failure
-        assertNull(helper.getConnection());
+        Connection conn = helper.getConnection();
+        assertNull(conn, "Connection should be null when SQLException occurs");
     }
 }

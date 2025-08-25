@@ -1,2 +1,4 @@
 DAO\BookDAOTest.class
 DAO\DatabaseHelperTest.class
+DAO\LoanDAOTest.class
+DAO\UserDAOTest.class
