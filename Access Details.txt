@@ -1,0 +1,7 @@
+
+database name =library_management
+
+username = ucsc
+pass     = ucsc
+security =Course name ?
+answer   =IS

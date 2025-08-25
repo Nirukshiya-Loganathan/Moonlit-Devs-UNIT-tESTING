@@ -1,0 +1,7 @@
+DAO\ConnectionProvider.class
+DAO\DatabaseHelper.class
+DAO\DriverManagerConnectionProvider.class
+model\Book.class
+DAO\BookDAO.class
+model\User.class
+model\Loan.class

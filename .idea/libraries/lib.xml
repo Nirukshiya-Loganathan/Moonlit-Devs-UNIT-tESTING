@@ -1,0 +1,12 @@
+<component name="libraryTable">
+  <library name="lib">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/Library System/dist/lib/mysql-connector-j-9.1.0.jar!/" />
+      <root url="jar://$PROJECT_DIR$/Library System/dist/lib/DateChooser.jar!/" />
+      <root url="jar://$PROJECT_DIR$/Library System/dist/lib/rs2xml.jar!/" />
+      <root url="jar://$PROJECT_DIR$/Library System/dist/lib/AbsoluteLayout.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>
